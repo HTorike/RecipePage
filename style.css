@@ -25,7 +25,7 @@ body{
     }
     
     .container-cont {
-        padding: 0 1.5em 0 1.5em;
+        margin: 2em;
     }
     
     .ome {
@@ -67,6 +67,59 @@ body{
         padding-bottom: 0.5em;
     }
 
+    .instructions {
+        border-bottom: 1px solid;
+    }
+
+    .instructions span {
+        font-weight: 700;
+    }
+
+    .instructions ol {
+        list-style: none;
+        counter-reset: li;
+    }
+
+    .instructions li::before {
+        content: counter(li); color: hsl(14, 45%, 36%);
+        font-weight: 600;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+
+    .instructions li {
+        counter-increment: li;
+    }
+
+    .nutri {
+        font-family: "Young Serif", sans-serif;
+        color: hsl(14, 45%, 36%);
+        font-weight: 400;
+        font-size: 24px;
+    }
+
+    .nutri-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        text-align: left;
+        align-items: center;
+    }
+
+    .nutri-grid div {
+        padding: 1em;
+        border-bottom: 1px solid;
+    }
+
+    .num {
+        color: hsl(14, 45%, 36%);
+        font-weight: 700;
+    }
+
+    #fat {
+        border-bottom: none;
+    }
+
 }
 
 @media screen and (max-width: 375px) {
@@ -82,7 +135,10 @@ body{
         width: 50vh;
     }
 
-    
+    .title {
+        font-family: "Young Serif", sans-serif;
+        font-weight: 400;
+    }
 
     .container {
         display: flex;

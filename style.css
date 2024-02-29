@@ -1,0 +1,193 @@
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    background-color: hsl(30, 54%, 90%);
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+    
+@media screen and (min-width: 1440px){
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: hsl(0, 0%, 100%);
+        padding: 2em;
+        border-radius: 20px;
+        width: 55vh;
+        text-align: left;
+        margin: 2em 0 2em 0;
+    }
+    
+    .container-cont {
+        padding: 0 1.5em 0 1.5em;
+    }
+    
+    .ome {
+        width: 55vh;
+        border-radius: 20px;
+    }
+    
+    .title {
+        font-family: "Young Serif", sans-serif;
+        font-weight: 400;
+    }
+    
+    .preparation {
+        width: 55vh;
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        text-align: left;
+        background-color: hsl(330, 100%, 98%);
+        border-radius: 20px;
+    }
+    
+    .preparation span {
+        font-weight: 700;
+    }
+    
+    .prep-time {
+        color: hsl(332, 51%, 32%);
+    }
+    
+    .ingred {
+        font-family: "Young Serif", sans-serif;
+        color: hsl(14, 45%, 36%);
+        font-weight: 400;
+    }
+    
+    .ingredients {
+        border-bottom: 1px solid;
+        padding-bottom: 0.5em;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+    /* First Section */
+
+    body {
+        display: block;
+        margin: 0;
+    }
+
+    .ome {
+        width: 50vh;
+    }
+
+    
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        background-color: hsl(0, 0%, 100%);
+        padding-bottom: 2em;
+    }
+
+    .container-cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        margin: 0 1.5em 0 1.5em;
+    }
+
+    .preparation {
+        width: 35vh;
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        text-align: left;
+        background-color: hsl(330, 100%, 98%);
+    }
+
+    .preparation span {
+        font-weight: 700;
+    }
+
+    .prep-time {
+        color: hsl(332, 51%, 32%);
+    }
+
+    /* Second Section */
+
+    .ingred {
+        font-family: "Young Serif", sans-serif;
+        color: hsl(14, 45%, 36%);
+        font-weight: 400;
+    }
+
+    .ingredients {
+        border-bottom: 1px solid;
+    }
+
+    .instructions {
+        border-bottom: 1px solid;
+    }
+
+    .instructions span {
+        font-weight: 700;
+    }
+
+    .instructions ol {
+        list-style: none;
+        counter-reset: li;
+    }
+
+    .instructions li::before {
+        content: counter(li); color: hsl(14, 45%, 36%);
+        font-weight: 600;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+
+    .instructions li {
+        counter-increment: li;
+    }
+
+    .instruc {
+        color: hsl(332, 51%, 32%);
+        font-family: "Young Serif", sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+    }
+
+    /* Third Section */
+
+    .nutri {
+        font-family: "Young Serif", sans-serif;
+        color: hsl(14, 45%, 36%);
+        font-weight: 400;
+        font-size: 24px;
+    }
+
+    .nutri-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        text-align: left;
+        align-items: center;
+    }
+
+    .nutri-grid div {
+        padding: 1em;
+        border-bottom: 1px solid;
+    }
+
+    .num {
+        color: hsl(14, 45%, 36%);
+        font-weight: 700;
+    }
+
+    #fat {
+        border-bottom: none;
+    }
+
+}
